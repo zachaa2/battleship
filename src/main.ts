@@ -1,7 +1,7 @@
-import k, { isDev } from "./kaplayCtx"
+import k, { isDev } from './kaplayCtx'
 
 if (isDev) {
-  console.log("Starting in dev mode...")
+    console.log('Starting in dev mode...')
 }
 
-k.add([k.text("Hello World!")])
+k.add([k.text('Hello World!')])

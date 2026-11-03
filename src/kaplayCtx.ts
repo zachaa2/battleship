@@ -1,11 +1,11 @@
-import kaplay from "kaplay";
+import kaplay from 'kaplay'
 
-export const isDev = import.meta.env.DEV;
+export const isDev = import.meta.env.DEV
 
 const k = kaplay({
-    width: 1920, 
-    height: 1080, 
-    letterbox: true, 
+    width: 1920,
+    height: 1080,
+    letterbox: true,
     background: [0, 0, 0],
     global: false,
     // buttons: {
@@ -28,6 +28,6 @@ const k = kaplay({
     touchToMouse: true,
     debugKey: 'd',
     debug: isDev,
-});
+})
 
-export default k;
+export default k
