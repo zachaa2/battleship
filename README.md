@@ -25,3 +25,21 @@ The code should also be formatted before being committed to `main`. Format via t
 ```bash
 pnpm run format
 ```
+
+# Assets
+
+Found in `public/assets`.
+
+## Sounds
+
+`story-sea.wav` - downloaded for free from [Mixkit](https://mixkit.co/free-sound-effects/sea/)
+
+## Fonts
+
+`VT323` - from [Google Fonts](https://fonts.google.com/specimen/VT323)
+
+# License
+
+- Source code: [MIT](LICENSE)
+- Original assets: [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)
+- Third-party assets keep their own licenses; see [`public/assets/LICENSE.md`](public/assets/LICENSE.md)

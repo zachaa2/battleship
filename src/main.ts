@@ -7,7 +7,7 @@ if (isDev) {
 }
 
 // load fonts
-k.loadFont('VT323', 'assets/fonts/VT323-Regular.ttf')
+k.loadFont('VT323', 'assets/fonts/VT323/VT323-Regular.ttf')
 
 // load shader
 loadWaterShader()
