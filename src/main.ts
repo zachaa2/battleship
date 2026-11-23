@@ -1,4 +1,5 @@
 import k, { isDev } from './kaplayCtx'
+import intro from './scenes/intro'
 import mainMenu from './scenes/main-menu'
 import loadWaterShader from './shaders/water'
 
@@ -17,6 +18,7 @@ k.loadSound('stormy-sea', 'assets/sounds/stormy-sea.wav')
 
 // load scenes
 k.scene('main-menu', mainMenu)
+k.scene('intro', intro)
 
 // GOTO MENU
-k.go('main-menu')
+k.go('intro')

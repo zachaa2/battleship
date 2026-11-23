@@ -1,7 +1,18 @@
 import k from '../kaplayCtx'
-import { DEFAULT_FONT } from '../utils'
+import { DEFAULT_FONT } from '../utils/fonts'
+import { fadeAudioIn } from '../utils/audio'
 
 export default function mainMenu() {
+    // sfx
+    const waterSfx = k.play('stormy-sea', {
+        volume: 0,
+        loop: true,
+        speed: 0.7,
+        detune: -50,
+    })
+    fadeAudioIn(waterSfx, 0.4, 0.5)
+
+    // title
     k.add([
         k.text('BATTLESHIP', {
             font: DEFAULT_FONT,
