@@ -1,4 +1,5 @@
 import k, { isDev } from './kaplayCtx'
+import loadWaterShader from './shaders/water'
 import { DEFAULT_FONT } from './utils'
 
 if (isDev) {
@@ -7,6 +8,9 @@ if (isDev) {
 
 // load fonts
 k.loadFont('VT323', 'assets/fonts/VT323-Regular.ttf')
+
+// load shader
+loadWaterShader()
 
 k.add([
     k.text('BATTLESHIP', {
@@ -19,4 +23,18 @@ k.add([
     }),
     k.pos(k.center().x, 150),
     k.anchor('center'),
+])
+
+// water shader bg
+k.add([
+    k.rect(k.width(), k.height()),
+    k.pos(0, 0),
+    k.shader('water', () => ({
+        u_time: k.time(),
+        u_scale: 12.0,
+        u_speed: 0.45,
+        u_pixelSize: 2.0,
+        u_resolution: k.vec2(k.width(), k.height()),
+    })),
+    k.z(-1),
 ])
